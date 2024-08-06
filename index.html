@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <form id="pokemon-form">
+            <label for="pokemon-input">Digite o nome ou número do Pokémon:</label>
+            <input type="text" id="pokemon-input" placeholder="Ex: pikachu ou 25" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="pokemon-info" class="hidden">
+            <h2>Informações do Pokémon:</h2>
+            <div id="pokemon-image"></div>
+            <p><strong>Nome:</strong> <span id="pokemon-name"></span></p>
+            <p><strong>Tipo(s):</strong> <span id="pokemon-types"></span></p>
+            <p><strong>Altura:</strong> <span id="pokemon-height"></span> m</p>
+            <p><strong>Peso:</strong> <span id="pokemon-weight"></span> kg</p>
+            <button id="collapse-button" class="hidden">Recolher</button>
+        </div>
+        <p id="error-message" class="hidden">Pokémon não encontrado. Verifique o nome ou número e tente novamente.</p>
+
+        <div class="more-info">
+            <a href="#" id="toggle-info" class="arrow-link">
+                <img src="https://img.icons8.com/ios-filled/40/000000/long-arrow-down.png" alt="Seta para baixo">
+            </a>
+        </div>
+        <div id="info-section" class="info-section hidden">
+            <h2>Sobre este Projeto</h2>
+            <p>Este aplicativo foi desenvolvido para facilitar a busca de informações sobre Pokémon utilizando a PokéAPI.</p>
+            <p>Desenvolvido por <strong>Luiz F.</strong>.</p>
+            <a href="https://github.com/luizwp" class="github-link" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/30/000000/github.png" alt="GitHub"> Visite o GitHub do autor
+            </a>
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+</body>
+</html>
